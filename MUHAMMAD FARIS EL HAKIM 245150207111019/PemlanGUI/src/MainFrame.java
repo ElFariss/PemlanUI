@@ -7,6 +7,11 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+
+/*
+* https://github.com/ElFariss/PemlanUI
+*/
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -343,7 +348,7 @@ public class MainFrame extends javax.swing.JFrame {
             input.close();
             file.close();
             
-            DefaultTableModel model = (DefaultTableModel) tableClients.getModel();
+            DefaultTableModel model = (DefaultTableModel) tableClient.getModel();
             for (int i = 0; i < tableData.size(); i++) {
                 Vector row = tableData.get(i);
                 model.addRow(new Object[]{row.get(0), row.get(1), row.get(2), row.get(3)});
